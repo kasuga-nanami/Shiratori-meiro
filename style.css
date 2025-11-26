@@ -1,0 +1,59 @@
+body {
+    font-family: "Comic Sans MS", "Hiragino Maru Gothic ProN", sans-serif;
+    text-align: center;
+    background: #ffeecf;
+    margin: 0;
+}
+
+h1 {
+    background: #ff9ecb;
+    padding: 15px;
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+}
+
+#setup {
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #ff92a5;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6f8a;
+}
+
+.hidden {
+    display: none;
+}
+
+#grid {
+    display: grid;
+    gap: 2px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 5px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.cell.start { background: #7fffbb; }
+.cell.goal  { background: #ffdb6e; }
+.cell.path  { background: #b2d7ff; }

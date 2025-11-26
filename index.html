@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>単語つなぎ迷路</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>🌈 単語つなぎ迷路 🌈</h1>
+
+<div id="setup">
+    <input id="nameInput" placeholder="名前">
+    <input id="roomInput" placeholder="ルームコード">
+    <select id="sizeSelect">
+        <option value="10">簡単（10×10）</option>
+        <option value="20">普通（20×20）</option>
+        <option value="30">難しい（30×30）</option>
+    </select>
+    <button id="joinBtn">参加</button>
+</div>
+
+<div id="game" class="hidden">
+    <h2 id="turnInfo"></h2>
+    <div id="grid"></div>
+
+    <input id="wordInput" placeholder="ひらがなで入力">
+    <button id="sendWord">送信</button>
+
+    <p id="msg"></p>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
